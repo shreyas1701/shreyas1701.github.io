@@ -91,6 +91,9 @@ plugins:
   - jekyll-paginate-v2 #Pagination
   - jekyll-google-photos #Link to GPhotos
   - jekyll-seo-tag #SEO Tags
+  - jekyll-archives
+  - jekyll-last-modified-at
+
 
 
 collections:
