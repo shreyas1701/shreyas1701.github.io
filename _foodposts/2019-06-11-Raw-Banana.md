@@ -15,10 +15,7 @@ Do check it out, it has an elaborate explanation of each step. I followed each s
 It's a very low effort dish and if you are bachelor/bachelorette it is something you would wanna include in your easy-to-make
 dish. So go ahead, try out the recipe link and let me know how it goes.
 
-{% google_photos https://photos.app.goo.gl/SmQxyUvL39dgtUXj6 1200 %}
-
-{% google_photos https://photos.app.goo.gl/kbWWcSDPc151e4va6 1200 %}
-
+<a href='https://photos.google.com/share/AF1QipMJNYOdlXztOTKgJ59xiW7LYijRUhVs9AqxpdMXyyiyiVYaKfHEOb96QTdOtHLXqQ?key=dXFKQ2lyU2VIVkRvSlpvS1ZvamZLSTNqZTN4RUJR&source=ctrlq.org'><img src='https://lh3.googleusercontent.com/2JB4retXlTXPJ5WQVXNrR3mAZgELbpQfhpPowmHr49_n6_iSeQNZ7uiUqBRUs-QemlmDM-d6b43-96pxEISMyK6Li79RavENtFTivMkyDj_8f7WI9n9YXXcD1xG-UPyXaeQXhKnLdQg=w2400' /></a>
 
 Thank you, @dasanna!! Keep doing the awesome work you do!
 
