@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem "jekyll-paginate-v2"
 gem 'jekyll-sitemap'
-gem 'jekyll-paginate'
 gem 'github-pages'
 gem 'html-proofer'
 gem 'jekyll-admin' 
