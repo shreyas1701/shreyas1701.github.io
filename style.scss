@@ -32,10 +32,59 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Light text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Adjust colors for all headings in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #fff; 
+}
+
+/* Footer styles for dark mode */
+body.dark-mode footer {
+  background-color: #333; /* Darker background for the footer */
+  color: #ccc; /* Softer text color for contrast */
+  border-top: 1px solid #444; /* Subtle border for separation */
+  padding: 1em; /* Ensure proper spacing */
+}
+
+/* Links in footer for dark mode */
+body.dark-mode footer a {
+  color: #80b3ff; /* Soft blue for links in dark mode */
+  text-decoration: none; /* Remove underline */
+}
+
+body.dark-mode footer a:hover {
+  color: #d0e6ff; /* Lighter blue on hover for visibility */
+}
+
+/* Buttons in dark mode */
+body.dark-mode button {
+  background-color: #444; /* Button background in dark mode */
+  color: #fff; /* Button text color */
+  border: 1px solid #555; /* Subtle border for buttons */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+  color: #ddd; /* Softer text color on hover */
+}
+
 
 .container {
   margin: 0 auto;
@@ -46,7 +95,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $darkerGray; 
   font-weight: bold;
 
   line-height: 1.7;
@@ -55,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
 
   @include mobile {
     line-height: 1.4;
+  }
+
+  &.dark-mode { 
+    color: #fff; /* Adjust heading color for dark mode */
   }
 }
 
@@ -75,7 +128,10 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $gray; 
+  &.dark-mode { 
+    color: #aaa; /* Adjust h4 color for dark mode */
+  }
 }
 
 p {
@@ -83,11 +139,15 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $blue; 
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
+  }
+
+  &.dark-mode { 
+    color: #007bff; /* Adjust link color for dark mode */
   }
 }
 
@@ -131,7 +191,10 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $gray; 
+  &.dark-mode { 
+    color: #aaa; /* Adjust date color for dark mode */
+  }
 }
 
 // Specify the color of the selection
@@ -174,6 +237,10 @@ img {
 
   @include mobile {
     text-align: center;
+  }
+
+  &.dark-mode {
+    border-color: #444; /* Adjust border color for dark mode */
   }
 }
 
@@ -273,6 +340,10 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+
+  &.dark-mode {
+    border-color: #444; /* Adjust border color for dark mode */
+  }
 }
 
 .posts > .post:last-child {
@@ -288,6 +359,11 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+
+    &.dark-mode { 
+      border-color: #aaa; /* Adjust border color for dark mode */
+      color: #aaa; /* Adjust blockquote color for dark mode */
+    }
   }
 
   .comments {
@@ -304,12 +380,20 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+
+  &.dark-mode {
+    border-color: #444; /* Adjust border color for dark mode */
+  }
 }
 
 footer {
   background-color: $lightGray;
   padding: 20px 0;
   text-align: center;
+
+  &.dark-mode {
+    background-color: #333; /* Adjust background color for dark mode */
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
